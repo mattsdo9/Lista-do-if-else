@@ -1,0 +1,28 @@
+<script> 
+     //Problema: Maior número[2] 
+     //Peça ao usuário para informar três números e diga, ao final do programa, qual dos três é o maior número. 
+  
+     //ENTRADA 
+    const numero1 = Number(prompt(`Informe o primeiro número`).trim().replace(",","."));
+    const numero2 = Number(prompt(`Informe o segundo número`).trim().replace(",","."));
+    const numero3 = Number(prompt(`Informe o terceiro número`).trim().replace(",","."));
+  
+     //PROCESSAMENTO 
+  
+  
+     //SAÍDA if (numero3 == numero2 == numero1) {
+        document.write(`Todos tem o mesmo valor`);
+    } else if (numero1 > numero2 && numero1 > numero3) {
+        document.write(`${numero1.replace(".",",")} é o maior`);
+    } else if (numero2 > numero1 && numero2 > numero3) {
+        document.write(`${numero2.replace(".",",")} é o maior`);
+    } else if (numero3 > numero2 && numero3 > numero1) {
+        document.write(`${numero3.replace(".",",")} é o maior`);
+    } else if (numero3 < numero1 && numero2 == numero1) {
+        document.write(`${numero1.replace(".",",")} e ${numero2.replace(".",",")} são os maiores`);
+    } else if (numero1 > numero2 && numero1 == numero3) {
+        document.write(`${numero1.replace(".",",")} e ${numero3.replace(".",",")} são os maiores`);
+    } else if (numero2 > numero1 && numero2 == numero3) {
+        document.write(`${numero2.replace(".",",")} e ${numero3.replace(".",",")} são os maiores`);
+    };
+ </script>
